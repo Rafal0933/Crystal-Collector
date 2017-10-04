@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crystal Collector</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="Assets/Style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+</head>
+<body>
+
+    <!-- For some reason the screen has to be 991 Pixels wide or less for the Crystals Collector title to Appear -->
+    <div class="row1">
+     <div class="col-md-4">
+        <h1>CrystalCollector</h1>
+     </div>
+    </div>
+
+    <div class="row2">
+      <div class="col-md-8">
+            <h2>You will be given a random number at the start of the game.</h2>
+            <h2>There are 4 crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</h2>
+            <h2>You will win the game by matching your total score to a random number. You lose the game if your total score goes above the random number.</h2>
+            <h2>The value of each crystal is hidden from you until you click on it.</h2>
+            <h2>Each time the game starts, the game will change the values of each crystal.</h2>
+      </div>
+     </div>
+
+    <br>
+
+    <div class="row3">
+      <div class="col-md-2">
+          <div id="internal">
+          </div>
+      </div>
+   </div>
+
+ <!--  Couldn't quite get the wins/losses to float right. -->
+
+     <div class="row3b">
+     <div class="col-md-2">
+            <div id="counter">
+                <h1>Wins: <span id="wins"></span></h1>
+                <h1>Loses: <span id="loses"></span></h1>
+            </div>
+     </div>
+     </div>
+
+    <br>
+
+    <div class="row4">
+      <div class="col-md-12">
+          <div id="crystals">
+          </div>
+      </div>
+    </div>
+
+    <br>
+
+  <div id="total-score">
+    <h1>Your total score is: <span id="score"></span></h1>
+  </div>
+
+<script src="Assets/Javascript.js">
+
+</script>
+</body>
+</html>
